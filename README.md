@@ -14,6 +14,8 @@ Also, set the connection string defaults for the storage account in your profile
 	az storage container create --name pwachallengestatic
 	az storage blob upload --container-name pwachallengestatic --file clientside/index.html --name index.html --content-type "text/html"
 	az storage container set-permission --name pwachallengestatic --public-access blob
+	az storage blob upload --container-name pwachallengestatic --file clientside/dist.js --name dist.js --content-type "application/javascript"
+	az storage blob upload --container-name pwachallengestatic --file clientside/polyfill.min.js --name polyfill.min.js --content-type "application/javascript"
 
 
 The whole thing can then be accessed here: https://pwachallenge.azurewebsites.net
