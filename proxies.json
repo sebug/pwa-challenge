@@ -8,6 +8,15 @@
                 "route": "/"
             },
             "backendUri": "https://pwachallenge.blob.core.windows.net/pwachallengestatic/index.html"
+        },
+	"otherFiles": {
+            "matchCondition": {
+                "methods": [
+                    "GET"
+                ],
+                "route": "/static/{*restOfPath}"
+            },
+            "backendUri": "https://pwachallenge.blob.core.windows.net/pwachallengestatic/{restOfPath}"
         }
     }
 }
