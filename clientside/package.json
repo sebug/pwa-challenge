@@ -1,0 +1,24 @@
+{
+  "name": "pwachallenge",
+  "version": "1.0.0",
+  "description": "A postbox progressive webapp with a Knockout UI",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "pwa",
+    "knockout"
+  ],
+  "author": "Sebastian Gfeller",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "requirejs": "^2.3.5"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-es2015-modules-amd": "^6.24.1",
+    "babel-preset-env": "^1.6.1"
+  }
+}
