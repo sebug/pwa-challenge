@@ -9,5 +9,11 @@ For the fun of it we'll also do it serverless.
 
 Set up continuous integration with GitHub, quoi.
 
+Also, set the connection string defaults for the storage account in your profile (az storage account show-connection-string --resource-group pwaChallenge --name pwachallenge).
+
 	az storage container create --name pwachallengestatic
 	az storage blob upload --container-name pwachallengestatic --file clientside/index.html --name index.html --content-type "text/html"
+	az storage container set-permission --name pwachallengestatic --public-access blob
+
+
+The whole thing can then be accessed here: https://pwachallenge.azurewebsites.net
