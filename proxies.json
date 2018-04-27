@@ -1,0 +1,13 @@
+{
+    "proxies": {
+        "staticFront": {
+            "matchCondition": {
+                "methods": [
+                    "GET"
+                ],
+                "route": "/"
+            },
+            "backendUri": "https://pcalarmer.blob.core.windows.net/pcalarmerstatic/index.html"
+        }
+    }
+}
