@@ -7,7 +7,7 @@
                 ],
                 "route": "/"
             },
-            "backendUri": "https://pcalarmer.blob.core.windows.net/pcalarmerstatic/index.html"
+            "backendUri": "https://pwachallenge.blob.core.windows.net/pwachallengestatic/index.html"
         }
     }
 }
