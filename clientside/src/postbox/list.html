@@ -2,7 +2,7 @@
 <div class="post-box-list">
   <ul>
     <!-- ko foreach: postBoxList -->
-    <li data-bind="click: function () { $parent.selectPostbox($data); }"><span data-bind="html: description_en"></span></li>
+    <li><span data-bind="html: description_en"></span><button data-bind="click: function () { $parent.selectPostbox($data); }">Details</button></li>
     <!-- /ko -->
   </ul>
 </div>

@@ -1,5 +1,11 @@
 <div class="postbox-view">
   <!-- ko with: postbox -->
   <h2><span data-bind="text: description_en"></span></h2>
+
+  <address>
+    <span data-bind="text: address_street"></span><br>
+    <span data-bind="text: address_zip"></span> <span data-bind="text: address_city"></span>
+  </address>
+  
   <!-- /ko -->
 </div>
