@@ -2,3 +2,4 @@ node_modules
 clientside/lib
 dist.js
 polyfill.min.js
+knockout-3.4.2.js

@@ -17,5 +17,9 @@ Also, set the connection string defaults for the storage account in your profile
 	az storage blob upload --container-name pwachallengestatic --file clientside/dist.js --name dist.js --content-type "application/javascript"
 	az storage blob upload --container-name pwachallengestatic --file clientside/polyfill.min.js --name polyfill.min.js --content-type "application/javascript"
 
+You'll also need Knockout (which you can get via curl -O http://knockoutjs.com/downloads/knockout-3.4.2.js ). In the spirit of not going too heavy I'm not doing much more on the side of client-side package management.
+
+	az storage blob upload --container-name pwachallengestatic --file clientside/knockout-3.4.2.js --name knockout-3.4.2.js --content-type "application/javascript"
+
 
 The whole thing can then be accessed here: https://pwachallenge.azurewebsites.net
