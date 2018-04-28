@@ -16,6 +16,9 @@ module.exports = function (context, req) {
 
 	    context.log('at end');
 	    context.log('got ' + boxesResult.records.length + ' results');
+	    if (boxesResult.records.length > 0) {
+		context.log(JSON.stringify(boxesResult.records[0]));
+	    }
 
 	    context.res = {
 		body: boxesResult.records
