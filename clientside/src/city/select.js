@@ -6,9 +6,13 @@ class SelectCity {
 	this.cityName = ko.observable('');
     }
 
-    search() {
-	let response = await fetch('/api/SearchBoxesTrigger?city=' + this.cityName());
+    async searchBoxes(cityName) {
+	let response = await fetch('/api/SearchBoxesTrigger?city=' + cityName);
 	alert('Search results ' + response.json());
+    }
+
+    search() {
+	this.searchBoxes(this.cityName());
     }
 }
 
