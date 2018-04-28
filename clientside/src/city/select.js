@@ -8,7 +8,8 @@ class SelectCity {
 
     async searchBoxes(cityName) {
 	let response = await fetch('/api/SearchBoxesTrigger?city=' + cityName);
-	alert('Search results ' + response.json());
+	let boxList = await response.json();
+	alert('Search results ' + boxList);
     }
 
     search() {
