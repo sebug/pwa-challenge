@@ -1,3 +1,11 @@
-<div class="select-city">
-  <h2 data-bind="html: message"></h2>
-</div>
+<form data-bind="submit: search" class="select-city">
+<fieldset>
+  <legend>
+    <h1>Postbox search</h1>
+  </legend>
+  <label>
+    City name: <input type="text" data-bind="value: cityName" />
+  </label>
+  <button type="submit">Search</button>
+</fieldset>
+</form>

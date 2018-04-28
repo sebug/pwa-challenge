@@ -3,7 +3,12 @@ import htmlString from 'text!./select.html';
 
 class SelectCity {
     constructor(params) {
-	this.message = 'City selector';
+	this.cityName = ko.observable('');
+    }
+
+    search() {
+	let response = await fetch('/api/SearchBoxesTrigger?city=' + this.cityName());
+	alert('Search results ' + response.json());
     }
 }
 
