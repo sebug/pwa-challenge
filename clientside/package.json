@@ -4,8 +4,8 @@
   "description": "A postbox progressive webapp with a Knockout UI",
   "main": "index.js",
   "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1",
-      "build": "babel src -d lib && r.js -o app.build.js && cp node_modules/babel-polyfill/dist/polyfill.min.js ."
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src -d lib && cp src/city/select.html lib/city/select.html && r.js -o app.build.js && cp node_modules/babel-polyfill/dist/polyfill.min.js ."
   },
   "keywords": [
     "pwa",
@@ -15,7 +15,8 @@
   "license": "GPL-3.0",
   "dependencies": {
     "babel-polyfill": "^6.26.0",
-    "requirejs": "^2.3.5"
+    "requirejs": "^2.3.5",
+    "text": "github:requirejs/text"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
