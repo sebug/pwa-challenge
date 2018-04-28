@@ -21,7 +21,7 @@ module.exports = function (context, req) {
 	    }
 
 	    context.res = {
-		body: boxesResult.records.map((r) => r.fields);
+		body: boxesResult.records.map((r) => r.fields)
 	    };
 	    context.done();
 	});
