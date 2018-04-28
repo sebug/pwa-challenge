@@ -3,6 +3,7 @@
     name: "main",
     out: "dist.js",
     paths: {
-	knockout: "empty:"
+	knockout: "empty:",
+	jquery: "empty:"
     }
 }

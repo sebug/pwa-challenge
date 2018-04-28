@@ -21,5 +21,12 @@ You'll also need Knockout (which you can get via curl -O http://knockoutjs.com/d
 
 	az storage blob upload --container-name pwachallengestatic --file clientside/knockout-3.4.2.js --name knockout-3.4.2.js --content-type "application/javascript"
 
+Since we'll be building a manifest, may as well get jQuery locally as well ( curl -O https://code.jquery.com/jquery-3.2.1.min.js )
+
+	az storage blob upload --container-name pwachallengestatic --file clientside/jquery-3.2.1.min.js --name jquery-3.2.1.min.js --content-type "application/javascript"
+
+Require.js as well for completeness ( curl -O https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.5/require.min.js )
+
+	az storage blob upload --container-name pwachallengestatic --file clientside/require.min.js --name require.min.js --content-type "application/javascript"
 
 The whole thing can then be accessed here: https://pwachallenge.azurewebsites.net

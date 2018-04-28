@@ -1,5 +1,13 @@
 import ko from "knockout";
+import $ from "jquery";
 
-console.log('Babel does its thing.');
-console.log(ko);
+const vm = {
+    message: ko.observable('Babel does its thing')
+};
+
+$(document).ready(function () {
+    ko.applyBindings(vm, $('main')[0]);
+});
+
+
 
