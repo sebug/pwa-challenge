@@ -4,6 +4,7 @@ import $ from "jquery";
 const vm = {
 };
 
+ko.components.register('postbox-view', { require: 'postbox/view' });
 ko.components.register('postbox-list', { require: 'postbox/list' });
 ko.components.register('select-city', { require: 'city/select' });
 

@@ -2,8 +2,10 @@
 <div class="post-box-list">
   <ul>
     <!-- ko foreach: postBoxList -->
-    <li><span data-bind="html: description_en"></span></li>
+    <li data-bind="click: function () { $parent.selectPostbox($data); }"><span data-bind="html: description_en"></span></li>
     <!-- /ko -->
   </ul>
 </div>
+
+<postbox-view params="postbox: selectedPostbox"></postbox-view>
 <!-- /ko -->

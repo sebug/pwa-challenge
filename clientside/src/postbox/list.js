@@ -7,6 +7,11 @@ class PostboxList {
 	if (typeof this.postBoxList !== 'function') {
 	    this.postBoxList = ko.observableArray(this.postBoxList);
 	}
+	this.selectedPostbox = ko.observable();
+    }
+
+    selectPostbox(postbox) {
+	this.selectedPostbox(postbox);
     }
 }
 

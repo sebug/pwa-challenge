@@ -1,7 +1,7 @@
 {
     baseUrl: "lib",
     name: "main",
-    include: ['city/select', 'postbox/list' ],
+    include: ['city/select', 'postbox/list', 'postbox/view'],
     out: "dist.js",
     paths: {
 	knockout: "empty:",
