@@ -4,12 +4,14 @@ import htmlString from 'text!./select.html';
 class SelectCity {
     constructor(params) {
 	this.cityName = ko.observable('');
+	this.postBoxes = ko.observableArray([]);
     }
 
     async searchBoxes(cityName) {
 	let response = await fetch('/api/SearchBoxesTrigger?city=' + cityName);
 	let boxList = await response.json();
-	alert('Search results ' + boxList);
+	console.log(boxList);
+	this.postBoxes(boxList || []);
     }
 
     search() {
