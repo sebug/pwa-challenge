@@ -1,5 +1,8 @@
 {
     baseUrl: "lib",
     name: "main",
-    out: "dist.js"
+    out: "dist.js",
+    paths: {
+	knockout: "empty:"
+    }
 }
