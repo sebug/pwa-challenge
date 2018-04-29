@@ -9,6 +9,15 @@
             },
             "backendUri": "https://pwachallenge.blob.core.windows.net/pwachallengestatic/index.html"
         },
+	"serviceworker": {
+	    "matchCondition": {
+		"methods": [
+		    "GET"
+		],
+		"route": "/api/sw.js"
+	    },
+	    "backendUri": "https://pwachallenge.blob.core.windows.net/pwachallengestatic/sw.js"
+	},
 	"otherFiles": {
             "matchCondition": {
                 "methods": [

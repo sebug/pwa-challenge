@@ -29,4 +29,8 @@ Require.js as well for completeness ( curl -O https://cdnjs.cloudflare.com/ajax/
 
 	az storage blob upload --container-name pwachallengestatic --file clientside/require.min.js --name require.min.js --content-type "application/javascript"
 
+The service worker file needs a special route so that we can intercept in a minimal required scope:
+
+	az storage blob upload --container-name pwachallengestatic --file SearchBoxesTrigger/sw.js --name sw.js --content-type "application/javascript"
+
 The whole thing can then be accessed here: https://pwachallenge.azurewebsites.net
