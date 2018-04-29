@@ -33,4 +33,7 @@ The service worker file needs a special route so that we can intercept in a mini
 
 	az storage blob upload --container-name pwachallengestatic --file sw.js --name sw.js --content-type "application/javascript"
 
+## The Manifest
+Next part of the process is of course to have a manifest (see https://developers.google.com/web/fundamentals/web-app-manifest/ ). But this requires some icons as well.
+
 The whole thing can then be accessed here: https://pwachallenge.azurewebsites.net
