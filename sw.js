@@ -7,7 +7,11 @@ var urlsToCache = [
     '/static/require.min.js',
     '/static/dist.js',
     '/static/knockout-3.4.2.js',
-    '/static/jquery-3.2.1.min.js'
+    '/static/jquery-3.2.1.min.js',
+    '/static/icon_48x48.png',
+    '/static/icon_96x96.png',
+    '/static/icon_192x192.png',
+    '/static/icon_512x512.png'
 ];
 
 
