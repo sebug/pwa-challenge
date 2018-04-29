@@ -1,8 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <title>PWA Challenge</title>
+    <link rel="manifest" href="/manifest.json">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#FFFFFF"/>
     <script src="static/polyfill.min.js"></script>
     <script src="static/require.min.js"></script>
         <script>
@@ -22,10 +25,10 @@
 	</style>
   </head>
   <body>
-    <noscript>
+    <main>
+      <noscript>
       <p>This app requires JavaScript. You can, however, always navigate to the <a href="https://swisspost.opendatasoft.com/explore/dataset/zugangspunkte-post/">Raw Data</a>.</p>
     </noscript>
-    <main>
       <select-city></select-city>
     </main>
   </body>
