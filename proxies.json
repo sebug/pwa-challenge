@@ -14,7 +14,7 @@
 		"methods": [
 		    "GET"
 		],
-		"route": "/api/sw.js"
+		"route": "/sw.js"
 	    },
 	    "backendUri": "https://pwachallenge.blob.core.windows.net/pwachallengestatic/sw.js"
 	},
