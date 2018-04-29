@@ -9,9 +9,9 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="210mm"
-   height="297mm"
-   viewBox="0 0 744.09448819 1052.3622047"
+   width="90mm"
+   height="90mm"
+   viewBox="0 0 318.89764 318.89764"
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
@@ -25,9 +25,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.35"
-     inkscape:cx="75"
-     inkscape:cy="405.71429"
+     inkscape:zoom="0.54"
+     inkscape:cx="84.356748"
+     inkscape:cy="155.25337"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -35,7 +35,11 @@
      inkscape:window-height="810"
      inkscape:window-x="0"
      inkscape:window-y="1"
-     inkscape:window-maximized="1" />
+     inkscape:window-maximized="1"
+     fit-margin-left="5"
+     fit-margin-top="5"
+     fit-margin-right="5"
+     fit-margin-bottom="5" />
   <metadata
      id="metadata7">
     <rdf:RDF>
@@ -51,31 +55,36 @@
   <g
      inkscape:label="Ebene 1"
      inkscape:groupmode="layer"
-     id="layer1">
-    <rect
-       style="fill:#ffdd55;fill-opacity:1;stroke:none;stroke-width:1.60000002;stroke-linecap:butt;stroke-miterlimit:26.29999924;stroke-dasharray:none;stroke-opacity:1"
-       id="rect3336"
-       width="262.85712"
-       height="274.28571"
-       x="34.285713"
-       y="46.647919" />
-    <rect
-       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1.6;stroke-linecap:butt;stroke-miterlimit:26.29999924;stroke-dasharray:none;stroke-opacity:1"
-       id="rect4138"
-       width="202.85715"
-       height="62.857143"
-       x="65.714287"
-       y="89.505058" />
-    <flowRoot
-       xml:space="preserve"
-       id="flowRoot4140"
-       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:'Bitstream Vera Sans';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"><flowRegion
-         id="flowRegion4142"><rect
-           id="rect4144"
-           width="205.71428"
-           height="108.57143"
-           x="62.857143"
-           y="178.07649" /></flowRegion><flowPara
-         id="flowPara4146"
-         style="font-size:90px;text-anchor:middle;text-align:center">LB</flowPara></flowRoot>  </g>
+     id="layer1"
+     transform="translate(9.3567482,19.136361)">
+    <g
+       id="g4167"
+       transform="translate(-15.925926,-44.888889)">
+      <rect
+         y="46.647919"
+         x="34.285713"
+         height="274.28571"
+         width="262.85712"
+         id="rect3336"
+         style="fill:#ffdd55;fill-opacity:1;stroke:none;stroke-width:1.60000002;stroke-linecap:butt;stroke-miterlimit:26.29999924;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         y="89.505058"
+         x="65.714287"
+         height="62.857143"
+         width="202.85715"
+         id="rect4138"
+         style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1.60000002;stroke-linecap:butt;stroke-miterlimit:26.29999924;stroke-dasharray:none;stroke-opacity:1" />
+      <flowRoot
+         style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:'Bitstream Vera Sans';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         id="flowRoot4140"
+         xml:space="preserve"><flowRegion
+           id="flowRegion4142"><rect
+             y="178.07649"
+             x="62.857143"
+             height="108.57143"
+             width="205.71428"
+             id="rect4144" /></flowRegion><flowPara
+           style="font-size:90px;text-align:center;text-anchor:middle"
+           id="flowPara4146">LB</flowPara></flowRoot>    </g>
+  </g>
 </svg>
