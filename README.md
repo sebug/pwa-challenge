@@ -36,4 +36,12 @@ The service worker file needs a special route so that we can intercept in a mini
 ## The Manifest
 Next part of the process is of course to have a manifest (see https://developers.google.com/web/fundamentals/web-app-manifest/ ). But this requires some icons as well.
 
+	az storage blob upload --container-name pwachallengestatic --file clientside/assets/icon_192x192.png --name icon_192x192.png --content-type "image/png"
+	az storage blob upload --container-name pwachallengestatic --file clientside/assets/icon_96x96.png --name icon_96x96.png --content-type "image/png"
+	az storage blob upload --container-name pwachallengestatic --file clientside/assets/icon_48x48.png --name icon_48x48.png --content-type "image/png"
+
+Now, let's push the manifest:
+
+	az storage blob upload --container-name pwachallengestatic --file manifest.json --name manifest.json --content-type "application/json"
+
 The whole thing can then be accessed here: https://pwachallenge.azurewebsites.net
