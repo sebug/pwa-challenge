@@ -1,5 +1,6 @@
 // The service worker to be used for this sub-element.
 var CACHE_NAME = 'my-static-site-cache-v1';
+var DYNAMIC_CACHE_NAME = 'my-dynamic-site-cache';
 var urlsToCache = [
   '/',
   '/static/polyfill.min.js',
@@ -29,6 +30,25 @@ self.addEventListener('fetch', function (e) {
 		if (response) {
 		    return response;
 		}
-		return fetch(e.request);
+
+		console.log('matched but did not find response');
+
+		// so that we can store both in cache and perform it
+		var fetchRequest = e.request.clone();
+		return fetch(fetchRequest).then(function (response) {
+		    // Check if we received a valid response
+		    if(!response || response.status !== 200 || response.type !== 'basic') {
+			return response;
+		    }
+
+		    var responseToCache = response.clone();
+
+		    caches.open(DYNAMIC_CACHE_NAME)
+			.then(function(cache) {
+			    cache.put(e.request, responseToCache);
+			});
+
+		    return response;
+		});
 	    }));
 });
