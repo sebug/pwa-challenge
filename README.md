@@ -40,6 +40,9 @@ Next part of the process is of course to have a manifest (see https://developers
 	az storage blob upload --container-name pwachallengestatic --file clientside/assets/icon_96x96.png --name icon_96x96.png --content-type "image/png"
 	az storage blob upload --container-name pwachallengestatic --file clientside/assets/icon_48x48.png --name icon_48x48.png --content-type "image/png"
 	az storage blob upload --container-name pwachallengestatic --file clientside/assets/icon_512x512.png --name icon_512x512.png --content-type "image/png"
+	az storage blob upload --container-name pwachallengestatic --file clientside/assets/touch-icon_152x152.png --name touch-icon_152x152.png --content-type "image/png"
+	az storage blob upload --container-name pwachallengestatic --file clientside/assets/touch-icon_167x167.png --name touch-icon_167x167.png --content-type "image/png"
+	az storage blob upload --container-name pwachallengestatic --file clientside/assets/touch-icon_180x180.png --name touch-icon_180x180.png --content-type "image/png"
 
 Now, let's push the manifest:
 
