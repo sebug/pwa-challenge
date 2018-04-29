@@ -39,9 +39,13 @@ Next part of the process is of course to have a manifest (see https://developers
 	az storage blob upload --container-name pwachallengestatic --file clientside/assets/icon_192x192.png --name icon_192x192.png --content-type "image/png"
 	az storage blob upload --container-name pwachallengestatic --file clientside/assets/icon_96x96.png --name icon_96x96.png --content-type "image/png"
 	az storage blob upload --container-name pwachallengestatic --file clientside/assets/icon_48x48.png --name icon_48x48.png --content-type "image/png"
+	az storage blob upload --container-name pwachallengestatic --file clientside/assets/icon_512x512.png --name icon_512x512.png --content-type "image/png"
 
 Now, let's push the manifest:
 
 	az storage blob upload --container-name pwachallengestatic --file manifest.json --name manifest.json --content-type "application/json"
+
+## Additional Tweaks
+I had to make my Azure App HTTPS only.
 
 The whole thing can then be accessed here: https://pwachallenge.azurewebsites.net

@@ -16,9 +16,15 @@
 	    "src": "static/icon_192x192.png",
 	    "type": "image/png",
 	    "sizes": "192x192"
+	},
+	{
+	    "src": "static/icon_512x512.png",
+	    "type": "image/png",
+	    "sizes": "512x512"
 	}
     ],
     "start_url": "/",
     "theme_color": "#FFFFFF",
-    "background_color": "#FFFFFF"
+    "background_color": "#FFFFFF",
+    "display": "standalone"
 }
