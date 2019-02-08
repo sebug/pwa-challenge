@@ -15,6 +15,8 @@
   "license": "GPL-3.0",
   "dependencies": {
     "babel-polyfill": "^6.26.0",
+    "lodash": "^4.17.11",
+    "randomatic": "^3.1.1",
     "requirejs": "^2.3.5",
     "text": "github:requirejs/text"
   },
